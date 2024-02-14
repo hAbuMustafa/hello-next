@@ -1,0 +1,22 @@
+.trigger {
+  background-color: transparent;
+  border: none;
+}
+
+.censored {
+  animation: wiggling-noise 1s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes wiggling-noise {
+  0% {
+    transform: scale(1, 1) skewX(18deg);
+    filter: blur(0.3rem);
+    color: unset;
+  }
+
+  100% {
+    transform: scale(1.25, 1.25) skewX(-18deg);
+    filter: blur(0.4rem);
+    color: red;
+  }
+}
